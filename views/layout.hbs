@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>{{title}}</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/theme/monokai.min.css">
+
+<link rel='stylesheet' href='/stylesheets/style.css' />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Import favicons -->
+	<link rel="shortcut icon" type="image/png" href="https://1.bp.blogspot.com/-_cTJrrnd4sA/XohcQB_StUI/AAAAAAAAAUs/-enYMftF9QcQOK8f1LvMxUzxege7TTeugCLcBGAsYHQ/s1600/2014426b-089f-4cc6-8c84-406d1dd697b8_200x200.png">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <div class="logo">
+  <img src="https://1.bp.blogspot.com/-_cTJrrnd4sA/XohcQB_StUI/AAAAAAAAAUs/-enYMftF9QcQOK8f1LvMxUzxege7TTeugCLcBGAsYHQ/s1600/2014426b-089f-4cc6-8c84-406d1dd697b8_200x200.png" alt="" width="40"/>
+  </div>
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="/">CodingBuddy</a>
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav nav-tabs navbar-nav">
+
+           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+           <li class="nav-item"><a class="nav-link" href="/feature">Feature</a></li>
+           <li class="nav-item"><a class="nav-link" href="/changelog">Changelog</a></li>
+           <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+           <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+
+       </ul>
+         <ul class="nav navbar-nav navbar-right nav-tabs">
+            {{#if user}}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    role = "button" aria-haspopup="true" aria-expanded="false">
+                    {{user.name}}<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/logout">Logout</a></li>
+                </ul>
+              </li>
+            {{else}}
+              <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+            {{/if}}
+          </ul>
+</ul>
+       </div><!--/.nav-collapse -->
+     </div>
+   </nav>
+    {{{body}}}
+    <!-- CANVAS CLASS & CDN FOR particles.js -->
+ <canvas class="background"></canvas>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.js"></script>
+    
+<!-- Particle Script -->
+ <script>
+   var particles = Particles.init({
+     selector: ".background",
+     color: [
+       "#1d69e2",//blue
+       "#FFFFFF",//white
+       "#e8ebed", //pale blue
+       "#f4ed1f",//yellow
+       "#5cf41f"//florescent green
+     ],
+     sizeVaritions: 24,
+     maxParticles: 75,
+     connectParticles: true,
+     responsive: [
+       {
+         breakpoint: 620,
+         options: {
+           color: "#1d69e2",
+           maxParticles: 40,
+           connectParticles: true
+         }
+       }
+     ]
+   });
+ </script>
+
+      </body>
+</html>

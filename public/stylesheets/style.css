@@ -1,0 +1,477 @@
+body {
+  min-height: 250px;
+  padding-top: 70px;
+  background-image: url(https://1.bp.blogspot.com/-FbK2keEtB-I/XoiHSWdv-9I/AAAAAAAAAWQ/ds0_iavL15I-lUY6DAH4WKyoIqQQTJjbgCLcBGAsYHQ/s1600/abstract-art-black-background-blur-1040499.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: black;
+  padding: 10em 1em;
+  font-family: 'Comic Neue', cursive;
+}
+.background {
+  position: fixed;
+    display: block;
+    /* fill the entire page */
+    width: 100%;
+    height: 100%;
+    /* remove the space along the edges */
+    margin: 0;
+    padding: 0;
+    /* position it to start at the top of the page */
+    top: 0;
+    /* put it behind other content */
+    z-index: -1;
+  opacity: 0.8;
+  pointer-events: none;
+  }
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#my-video {
+  margin-top: 15px;
+  width: 280px;
+  height: auto;
+  background-color: #eee;
+}
+
+#second-video {
+  width: 100%;
+  height: 75%;
+  max-height: 480px;
+  background-color: #eee;
+}
+
+#video-container {
+  text-align: center;
+}
+
+#step1-error, #step2, #step3 {
+  display: none;
+}
+
+#my-id {
+  font-weight: bold;
+}
+
+p{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  position: relative;
+}
+
+#mark{
+  white-space: nowrap;
+}
+
+h1{
+  text-align: center;
+  color: Yellow;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  font-size: 3em;
+  position: relative;
+}
+
+h2{
+color: white;
+}
+h4{
+color: white;
+text-decoration: underline;
+}
+.form-group {
+color: white;
+}
+
+h5{
+text-decoration: nowrap;
+}
+
+#footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #252832;
+   padding: 0.1em 0;
+   color: white;
+   text-align: center;
+}
+#footer a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#display {
+  text-align: center;
+}
+
+#display a:hover {
+  color: yellow;
+}
+
+
+#display a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin: 20px 10px 0 10px;
+  text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 5px;    /* if you want it vertically middle of the navbar. */
+}
+
+#content {
+  padding: 30px 15px;
+  margin: 0 auto;
+  color: #565B65;
+  max-width: 1000px;
+}
+#content h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #45474C;
+}
+#content p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+#content a {
+  text-decoration: none;
+  color: #2771d5;
+}
+#content a:hover {
+  text-decoration: underline;
+}
+#content .button {
+  display: inline-block;
+  margin: 15px 0;
+  color: #fff;
+  background-color: purple;
+  padding: 10px 20px;
+}
+#content .button:hover {
+  text-decoration: none;
+  background-color: blue;
+}
+
+.repos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.repo-wrap {
+  width: 50%;
+}
+
+.repo {
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid #cecccc;
+  text-align: center;
+}
+.repo:hover {
+  background: black;
+}
+
+
+/* for button */
+input[type="checkbox"] {
+    display:none;
+}
+
+label {
+  color:white;
+  display:inline-block;
+  }
+label:after {
+  content:"";
+}
+input:checked ~ label:after {
+  content:"";
+}
+.inner {
+  max-height:200px;
+  overflow:hidden;
+  transition:all .3s ease;
+  width: none;
+  color: white;
+}
+
+input:checked + .inner {
+  max-height:100px;
+}
+
+
+/*For Changee */
+.timeline {
+    list-style: none;
+    padding: 5px 0 5px;
+    position: relative;
+
+}
+.timeline h6 {
+    margin-bottom: 0px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: blue;
+}
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 2px;
+    background-color: #eeeee;
+    left: 49%;
+    margin-left: -1.5px;
+    background: rgb(80, 80, 80);
+    background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
+    background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+}
+.timeline > li {
+    margin-bottom: 5px;
+    position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+
+}
+.timeline > li:after {
+    clear: both;
+
+}
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+.timeline > li:after {
+    clear: both;
+}
+.timeline > li > .timeline-panel {
+    width: 45%;
+    text-align: left;
+    float: right;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 15px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 7px;
+    display: inline-block;
+    border-top: 7px solid transparent;
+    border-left: 7px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 7px solid transparent;
+    content: " ";
+	border-left-width: 0;
+    border-right-width: 10px;
+    left: -10px;
+    right: auto;
+}
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 7px;
+    display: inline-block;
+    border-top: 7px solid transparent;
+    border-left: 7px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 7px solid transparent;
+    content: " ";
+	border-left-width: 0;
+    border-right-width: 10px;
+    left: -10px;
+    right: auto;
+}
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -28px;
+    background-color: red;
+    z-index: 8;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: left;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 12px;
+    border-right-width: 0px;
+    left: auto;
+    right: -12px;
+}
+.timeline-inverted{
+	padding-top:5px;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 12px;
+    border-right-width: 0px;
+    left: auto;
+    right: -12px;
+}
+.timeline-heading{
+    color:white;
+}
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+    font-size: 16px;
+        color: white;
+}
+.timeline-body > p + p {
+    margin-top: 5px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+}
+
+.timeline .date-info{
+    position: absolute;
+    top: -2px;
+    left: 40%;
+    margin-left: -28px;
+    width: 105px;
+    background-color: white;
+}
+.timeline-inverted .date-info{
+        left: 51%;
+}
+
+
+.date-info .month{
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    left: 70px;
+}
+.date-info .year{
+    position: absolute;
+    top: 23px;
+    font-size: 14px;
+    left: 70px;
+}
+.date-info .day{
+        font-size: 35px;
+}
+@media (max-width: 768px) {
+
+    .timeline:before {
+        left: 0.9%;
+    }
+    .timeline > li > .timeline-badge {
+        left: 2.2%;
+    }
+    .timeline > li > .timeline-panel{
+        width: 94%;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+    }
+
+    .timeline > li.timeline-inverted > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 10px;
+        left: -10px;
+        right: auto;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 10px;
+        left: -10px;
+        right: auto;
+    }
+    .date-info {
+        position: absolute;
+        top: 1px;
+        left: 90%;
+        margin-left: -24px;
+        width: auto;
+    }
+    .date-info .day {
+        font-size: 12px;
+    }
+    .date-info .month,.date-info .year{
+        position: initial;
+        font-size: 12px;
+    }
+
+}
+
+
+
+/* for further development */
+.blink {
+      animation: blinker 0.6s linear infinite;
+      color: #1c87c9;
+      font-size: 30px;
+      font-weight: bold;
+      }
+      @keyframes blinker {
+      50% { opacity: 0; }
+      }
+      .blink-one {
+      animation: blinker-one 1s linear infinite;
+      }
+      @keyframes blinker-one {
+      0% { opacity: 0; }
+      }
