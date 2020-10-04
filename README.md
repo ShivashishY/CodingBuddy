@@ -1,6 +1,4 @@
 # CodingBuddy
-
-Chatter
 ========================================
 
 ## College Project
