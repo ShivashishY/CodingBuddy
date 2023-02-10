@@ -19,7 +19,7 @@
     "nodemailer": "^3.1.8",
     "ot": "0.0.15",
     "particlesjs": "^2.2.3",
-    "passport": "^0.3.2",
+    "passport": "^0.6.0",
     "passport-facebook": "^3.0.0",
     "passport-local": "^1.0.0",
     "socket.io": "^2.3.0"
